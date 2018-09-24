@@ -1,36 +1,40 @@
 body {
   margin: 0;
   padding: 0;
+  font-family: "Opensans", Arial, sans-serif;
   font-size: 15px;
   line-height: 24px;
   color: #000000;
   min-width: 1200px;
 }
+a {
+  text-decoration: none;
+}
 @font-face {
   font-family: 'Gilroy';
-  src: url(../fonts/gilroyextrabold.woff) format(woff),
-       url(../fonts/gilroyextrabold.woff2) format(woff2);
+  src: url("../fonts/gilroyextrabold.woff") format("woff"),
+       url("../fonts/gilroyextrabold.woff2") format("woff2");
   font-weight: bold;
   font-style: normal;
 }
 @font-face {
   font-family: 'Gilroy';
-  src: url(../fonts/gilroylight.woff) format(woff),
-       url(../fonts/gilroylight.woff2) format(woff2);
+  src: url("../fonts/gilroylight.woff") format("woff"),
+       url("../fonts/gilroylight.woff2") format("woff2");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: 'Opensans';
-  src: url(../fonts/opensanslight.woff) format(woff),
-       url(../fonts/opensanslight.woff2) format(woff2);
+  src: url("../fonts/opensanslight.woff") format("woff"),
+       url("../fonts/opensanslight.woff2") format("woff2");
   font-weight: 300;
   font-style: normal;
 }
 @font-face {
   font-family: 'Opensans';
-  src: url(../fonts/opensans.woff) format(woff),
-       url(../fonts/opensans.woff2) format(woff2);
+  src: url("../fonts/opensans.woff") format("woff"),
+       url("../fonts/opensans.woff2") format("woff2");
   font-weight: normal;
   font-style: normal;
 }
@@ -42,9 +46,14 @@ body {
 }
 .page-header {
   padding-top: 40px;
+  position: relative;
 }
 .main-navigation {
   height: 299px;
+  background-color: #f7e296;
+}
+.main-navigation-catalog {
+  height: 186px;
   background-color: #f7e296;
 }
 .page-header ul {
@@ -52,9 +61,247 @@ body {
 }
 .logo {
   padding-left: 60px;
+  font-family: "Gilroy", Arial, sans-serif;
   font-size: 48px;
+  font-weight: bold;
+  text-transform: uppercase;
+  position: absolute;
+  top: 29px;
+  z-index: 5;
 }
-
-a {
-  text-decoration: none;
+.logo a {
+  color: #000000;
 }
+.search-form {
+  padding-top: 35px;
+  margin-bottom: 30px;
+}
+.search-form input[type=search] {
+  border: none;
+  background-color: inherit;
+  opacity: 0.3;
+  font-family: "Opensans", Arial, sans-serif;
+  padding-left: 36px;
+  width: 355px;
+}
+.search-form input[type=search]:hover,
+.search-form input[type=search]:focus{
+  opacity: 0.6;
+}
+.search-form:active {
+  border-bottom: 2px solid #000000;
+}
+.search-form::before {
+  content: "";
+  position: absolute;
+  top: 92px;
+  left: 75px;
+  width: 18px;
+  height: 18px;
+  background-image: url(../img/search.svg);
+  background-repeat: no-repeat;
+}
+.search-form input[type=submit] {
+  color: #000000;
+  background-color: inherit;
+  border: 2px solid #000000;
+  width: 83px;
+  height: 48px;
+  cursor: pointer;
+}
+.search-form input[type=submit]:hover,
+.search-form input[type=submit]:focus {
+  color: #ffffff;
+  background-color: #000000;
+}
+.search-form input[type=submit]:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+.top-column {
+  display: flex;
+  align-items: baseline;
+  padding-left: 60px;
+}
+.user-navigation a {
+  color: #000000;
+  position: relative;
+}
+.user-navigation {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  padding-left: 100px;
+}
+.login-link {
+  padding-left: 26px;
+}
+.login-link::before {
+  content: "";
+  position: absolute;
+  left: 0px;
+  top: 3px;
+  z-index: 5;
+  width: 13px;
+  height: 12px;
+  background-image: url("../img/user.svg");
+  background-repeat: no-repeat;
+}
+.compare {
+  margin-left: 209px;
+  padding-left: 31px;
+}
+.compare::before {
+  content: "";
+  position: absolute;
+  left: 11px;
+  top: 4px;
+  z-index: 5;
+  width: 13px;
+  height: 12px;
+  background-image: url("../img/compare.svg");
+  background-repeat: no-repeat;
+}
+.basket {
+  margin-left: 32px;
+  padding-left: 33px;
+}
+.basket::before {
+  content: "";
+  position: absolute;
+  left: 11px;
+  top: 4px;
+  z-index: 5;
+  width: 13px;
+  height: 12px;
+  background-image: url("../img/cart.svg");
+  background-repeat: no-repeat;
+}
+.user-navigation-catalog {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  padding-left: 100px;
+}
+.user-navigation-catalog a {
+  color: #000000;
+  position: relative;
+}
+.name-profile {
+  padding-left: 25px;
+}
+.name-profile::before {
+  content: "";
+  position: absolute;
+  left: 0px;
+  top: 4px;
+  z-index: 5;
+  width: 13px;
+  height: 12px;
+  background-image: url("../img/user.svg");
+  background-repeat: no-repeat;
+}
+.exit-link {
+  padding-left: 17px;
+  opacity: 0.3;
+}
+.compare-catalog {
+  margin-left: 51px;
+  padding-left: 31px;
+}
+.compare-catalog::before {
+  content: "";
+  position: absolute;
+  left: 11px;
+  top: 6px;
+  z-index: 5;
+  width: 10px;
+  height: 10px;
+  background-image: url("../img/compare.svg");
+  background-repeat: no-repeat;
+}
+.basket-catalog {
+  margin-left: 32px;
+  padding-left: 30px;
+}
+.basket-catalog::before {
+  content: "";
+  position: absolute;
+  left: 7px;
+  top: 4px;
+  z-index: 5;
+  width: 12px;
+  height: 12px;
+  background-image: url("../img/cart.svg");
+  background-repeat: no-repeat;
+}
+.site-navigation-list {
+  display: flex;
+  font-family: "Gilroy", Arial, sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 0;
+  margin: 0;
+  padding-left: 60px;
+  text-transform: uppercase;
+}
+.site-navigation-list a {
+  color: #000000;
+  letter-spacing: 3px;
+}
+.index-catalog {
+  margin-right: 300px;
+  padding-right: 20px;
+  position: relative;
+}
+.index-catalog::after {
+  content: "";
+  position: absolute;
+  left: 231px;
+  top: 4px;
+  z-index: 5;
+  width: 16px;
+  height: 16px;
+  background-image: url("../img/plus.svg");
+  background-repeat: no-repeat;
+  opacity: 0.3;
+}
+.site-navigation-list a:hover,
+.site-navigation-list a:focus {
+  opacity: 0.6;
+}
+.delivery-header {
+  margin-right: 34px;
+}
+.warranty-header {
+  margin-right: 103px;
+}
+/*Выпадающее меню*/
+.index-catalog:hover .hidden-catalog {
+  display: block;
+}
+.hidden-catalog {
+  display: none;
+  width: 1160px;
+}
+.hidden-catalog a {
+  color: #000000;
+  line-height: 36px;
+}
+.hidden-catalog-list {
+  padding: 0;
+  margin: 0;
+  padding-left: 60px;
+  padding-top: 50px;
+  width: 650px;
+}
+.hidden-catalog-item {
+  display: inline-block;
+  width: 200px;
+}
+.hidden-catalog-item:nth-child(3n+1) {
+  margin-right: 34px;
+}
+.hidden-catalog-item:last-child {
+  margin-right: 100px;
+}
+/*---конец выпадающего меню РАЗОБРАТЬ*/

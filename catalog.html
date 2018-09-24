@@ -7,49 +7,60 @@
   <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
-  <header class="page-header-catalog container">
-    <nav class="main-navigation">
-      <div class="logo">
-        <a>Device</a>
-      </div>
-      <div class="search-form">
-        Поиск по сайту
-      </div>
-      <div ="user-navigation-catalog">
-        <ul>
-          <li>Валентин Петухов</li>
-          <li>Выйти</li>
-          <li>Сравнить</li>
-          <li>Корзина</li>
+  <header class="page-header container">
+    <div class="logo">
+      <a href="index.html">Device</a>
+    </div>
+    <nav class="main-navigation-catalog">
+      <div class="top-column">
+        <form class="search-form">
+          <input type="search" class="search-form-field" name="search" placeholder="Поиск по сайту">
+          <input type="submit" name="submit" value="Найти">
+        </form>
+        <ul class="user-navigation-catalog">
+            <li><a href="#" class="name-profile">Валентин Петухов</a></li>
+            <li><a href="#" class="exit-link">Выйти</a></li>
+            <li><a href="#" class="compare-catalog">Сравнить</a></li>
+            <li><a href="#" class="basket-catalog">Корзина</a></li>
         </ul>
       </div>
       <div class="site-navigation">
-        <ul>
-          <li>Каталог товаров</li>
-          <li>Доставка</li>
-          <li>Гарантия</li>
-          <li>Контакты</li>
+        <ul class="site-navigation-list">
+          <li class="index-catalog"><a href="#">Каталог товаров</a></li>
+          <li class="delivery-header"><a href="#">Доставка</a></li>
+          <li class="warranty-header"><a href="#">Гарантия</a></li>
+          <li class="contacts-header"><a href="#">Контакты</a></li>
         </ul>
+        <section class="hidden-catalog">
+          <ul class="hidden-catalog-list">
+            <li class="hidden-catalog-item"><a href="#">Виртуальная реальность</a></li>
+            <li class="hidden-catalog-item"><a href="#">Фитнес-браслеты</a></li>
+            <li class="hidden-catalog-item"><a href="#">Квадрокоптеры</a></li>
+            <li class="hidden-catalog-item"><a href="catalog.html">Моноподы для селфи</a></li>
+            <li class="hidden-catalog-item"><a href="#">Умные часы</a></li>
+            <li class="hidden-catalog-item"><a href="#">Экшн-камеры</a></li>
+          </ul>
+        </section>
       </div>
     </nav>
   </header>
   <main>
-    <h1>Моноподы для селфи</h1>
-    <ul>
-      <li>
-        <a href="index.html">Главная</a>
-      </li>
-      <li>
-        <a href="#">Каталог товаров</a>
-      </li>
-      <li>
-        <a href="#">Моноподы для селфи</a>
-      </li>
-    </ul>
-    <div class="filter-title">
-      <h2>Фильтр:</h2>
-    </div>
-
+    <section>
+      <h1>Моноподы для селфи</h1>
+      <ul>
+        <li>
+          <a href="index.html">Главная</a>
+        </li>
+        <li>
+          <a href="#">Каталог товаров</a>
+        </li>
+        <li>
+          <a href="#">Моноподы для селфи</a>
+        </li>
+      </ul>
+      <div class="filter-title">
+        <h2>Фильтр:</h2>
+      </div>
       <div class="sorting-function">
         <a href="">Сортировка:</a>
         <a href="">По цене</a>
@@ -160,7 +171,7 @@
         <a href="#">Твиттер</a>
       </section>
       <a href="https://htmlacademy.ru/intensive/htmlcss">
-        <img src="" alt="">
+        <img src="#" alt="">
       </a>
     </div>
   </footer>

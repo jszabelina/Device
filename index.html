@@ -8,27 +8,38 @@
 </head>
 <body>
   <header class="page-header container">
+    <div class="logo">
+      <a>Device</a>
+    </div>
     <nav class="main-navigation">
-      <div class="logo">
-        <a>Device</a>
-      </div>
-      <div class="search-form">
-        Поиск по сайту
-      </div>
-      <div ="user-navigation">
-        <ul>
-          <li>Войти</li>
-          <li>Сравнить</li>
-          <li>Корзина</li>
+      <div class="top-column">
+        <form class="search-form">
+          <input type="search" class="search-form-field" name="search" placeholder="Поиск по сайту">
+          <input type="submit" name="submit" value="Найти">
+        </form>
+        <ul class="user-navigation">
+          <li><a href="#" class="login-link">Войти</a></li>
+          <li><a href="#" class="compare">Сравнить</a></li>
+          <li><a href="#" class="basket">Корзина</a></li>
         </ul>
       </div>
       <div class="site-navigation">
-        <ul>
-          <li>Каталог товаров</li>
-          <li>Доставка</li>
-          <li>Гарантия</li>
-          <li>Контакты</li>
+        <ul class="site-navigation-list">
+          <li class="index-catalog"><a href="#">Каталог товаров</a></li>
+          <li class="delivery-header"><a href="#">Доставка</a></li>
+          <li class="warranty-header"><a href="#">Гарантия</a></li>
+          <li class="contacts-header"><a href="#">Контакты</a></li>
         </ul>
+        <section class="hidden-catalog">
+          <ul class="hidden-catalog-list">
+            <li class="hidden-catalog-item"><a href="#">Виртуальная реальность</a></li>
+            <li class="hidden-catalog-item"><a href="#">Фитнес-браслеты</a></li>
+            <li class="hidden-catalog-item"><a href="#">Квадрокоптеры</a></li>
+            <li class="hidden-catalog-item"><a href="catalog.html">Моноподы для селфи</a></li>
+            <li class="hidden-catalog-item"><a href="#">Умные часы</a></li>
+            <li class="hidden-catalog-item"><a href="#">Экшн-камеры</a></li>
+          </ul>
+        </section>
       </div>
     </nav>
   </header>
@@ -97,15 +108,15 @@
         <li>
           <a href="#">
             <div class="image-product">
-              <img src="" alt="">
+              <img src="#" alt="Виртуальная реальность">
             </div>
             <p class="name-product">Виртуальная реальность</p>
           </a>
         </li>
         <li>
-          <a href="#">
+          <a href="catalog.html">
             <div class="image-product">
-              <img src="" alt="">
+              <img src="#" alt="Моноподы для селфи">
             </div>
             <p class="name-product">Моноподы для селфи</p>
           </a>
@@ -113,7 +124,7 @@
         <li>
           <a href="#">
             <div class="image-product">
-              <img src="" alt="">
+              <img src="#" alt="Экшн-камеры">
             </div>
             <p class="name-product">Экшн-камеры</p>
           </a>
@@ -121,7 +132,7 @@
         <li>
           <a href="#">
             <div class="image-product">
-              <img src="" alt="">
+              <img src="#" alt="Фитнес-браслеты">
             </div>
             <p class="name-product">Фитнес-браслеты</p>
           </a>
@@ -129,7 +140,7 @@
         <li>
           <a href="#">
             <div class="image-product">
-              <img src="" alt="">
+              <img src="#" alt="Умные часы">
             </div>
             <p class="name-product">Умные часы</p>
           </a>
@@ -137,7 +148,7 @@
         <li>
           <a href="#">
             <div class="image-product">
-              <img src="" alt="">
+              <img src="#" alt="Квадрокоптеры">
             </div>
             <p class="name-product">Квадрокоптеры</p>
           </a>
@@ -176,22 +187,22 @@
       <ul class="partners-list">
         <li>
           <a href="#">
-            <img src="" alt="">
+            <img src="#" alt="">
           </a>
         </li>
         <li>
           <a href="#">
-            <img src="" alt="">
+            <img src="3" alt="">
           </a>
         </li>
         <li>
           <a href="#">
-            <img src="" alt="">
+            <img src="#" alt="">
           </a>
         </li>
         <li>
           <a href="#">
-            <img src="" alt="">
+            <img src="#" alt="">
           </a>
         </li>
       </ul>
@@ -247,7 +258,7 @@
         <p>Тел.: +7 (495) 495-95-95</p>
         <div class="copy">
           <a href="https://htmlacademy.ru/intensive/htmlcss">
-            <img src="" alt="">
+            <img src="#" alt="">
           </a>
         </div>
       </nav>
