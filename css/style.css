@@ -305,3 +305,99 @@ a {
   margin-right: 100px;
 }
 /*---конец выпадающего меню РАЗОБРАТЬ*/
+.sliders-list {
+  list-style: none;
+}
+.slider-item {
+  display: flex;
+  position: relative;
+  top: -125px;
+}
+.slider-item img {
+  margin-left: 60px;
+  padding-right: 125px;
+}
+.number-slider {
+  font-family: "Gilroy", Arial, sans-serif;
+  font-size: 179px;
+  font-weight: bold;
+  left: 331px;
+  top: 61px;
+  color: #ffffff;
+  position: absolute;
+}
+.description-slider {
+  position: relative;
+}
+.description-slider h2 {
+  font-family: "Gilroy", Arial, sans-serif;
+  font-size: 47px;
+  line-height: 56px;
+  margin-bottom: 0;
+  margin-top: 80px;
+  position: relative;
+  z-index: 2;
+}
+.description-slider p {
+  font-family: "Opensans", Arial, sans-serif;
+  line-height: 30px;
+  font-weight: 300;
+  color: #464646;
+}
+.more-info {
+  color: #000000;
+  font-family: "Gilroy";
+  font-weight: bold;
+  font-size: 18px;
+  display: inline-block;
+  position: relative;
+  width: 220px;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 4px;
+  margin-top: 39px;
+}
+.more-info::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: 0px;
+  top: 9px;
+  background-color: #f0c52e;
+  width: 100%;
+  height: 8px;
+}
+.more-info:hover:before {
+  top: -10px;
+  height: 40px;
+}
+.options {
+  margin-top: 67px;
+  padding-left: 10px;
+}
+.option-value {
+  font-family: "Gilroy", Arial, sans-serif;
+  font-size: 36px;
+  font-weight: normal;
+  padding-bottom: 15px;
+  padding-right: 76px;
+}
+.option-type {
+  font-family: "Opensans", Arial, sans-serif;
+  font-size: 13px;
+  color: #464646;
+}
+
+.slider-second {
+  display: none;
+}
+.slider-third {
+  display: none;
+}
+.slider-second .description-slider {
+  padding-left: 20px;
+}
+.slider-third img {
+  margin: 0;
+  padding: 10px;
+}
