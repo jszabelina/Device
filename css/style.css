@@ -401,3 +401,85 @@ a {
   margin: 0;
   padding: 10px;
 }
+.products-list {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  justify-content: space-between;
+}
+.image-product {
+  width: 160px;
+  height: 160px;
+  background-color: #f7e296;
+}
+.product-virtual {
+  padding-left: 31px;
+  padding-top: 54px;
+}
+.product-monopod {
+  padding-left: 38px;
+  padding-top: 40px;
+}
+.product-cameras {
+  padding-left: 49px;
+  padding-top: 39px;
+}
+.product-bracelet {
+  padding-left: 27px;
+  padding-top: 49px;
+}
+.product-clocks {
+  padding-left: 59px;
+  padding-top: 31px;
+}
+.product-quadrupter {
+  padding-left: 13px;
+  padding-top: 49px;
+}
+.name-product {
+  width: 110px;
+  color: #000000;
+  font-family: "Gilroy", Arial, sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 24px;
+}
+.products {
+  padding-bottom: 184px;
+}
+.wrapper-services {
+  background-color: #e5e5e5;
+}
+.services-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-family: "Gilroy", Arial, sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 24px;
+}
+.services {
+  display: flex;
+}
+.warranty {
+  display: none;
+}
+.credit {
+  display: none;
+}
+.delivery-item {
+  padding-bottom: 30px;
+  width: 278px;
+  height: 40px;
+}
+.warranty-item {
+  padding-bottom: 30px;
+  width: 278px;
+  height: 40px;
+}
+.credit-item {
+  width: 278px;
+  height: 40px;
+}
